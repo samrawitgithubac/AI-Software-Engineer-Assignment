@@ -32,6 +32,39 @@ Update this README to include:
 - how to run the tests locally,
 - how to build and run tests with Docker.
 
+## How to Run Tests
+
+### Running Tests Locally
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Run the test suite:
+   ```bash
+   npm test
+   ```
+
+3. For development mode (watch mode):
+   ```bash
+   npm run dev
+   ```
+
+### Building and Running Tests with Docker
+
+1. Build the Docker image:
+   ```bash
+   docker build -t ai-assignment-ts .
+   ```
+
+2. Run the test suite in Docker:
+   ```bash
+   docker run ai-assignment-ts
+   ```
+
+The Docker image will automatically install dependencies and run the test suite using `npm test` as the default command.
+
 ### 4) Find + fix a bug (required)
 
 There is a bug somewhere in this repository.
